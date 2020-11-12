@@ -6,7 +6,7 @@ sudo apt-get update<br>
 sudo apt-get install php<br>
 php ceker-cc.php
 
-*CMD\n
+*CMD<br>
 add path php IN ENVIRONTMENT VARIABLE<br>
 php ceker-cc.php<br>
 
