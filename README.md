@@ -1,12 +1,12 @@
 # cc-ceker
 V.1
 
-*Terminal
-sudo apt-get update
-sudo apt-get install php
+*Terminal\n
+sudo apt-get update\n
+sudo apt-get install php\n
 php ceker-cc.php
 
-*CMD
-add path php IN ENVIRONTMENT VARIABLE
-php ceker-cc.php
+*CMD\n
+add path php IN ENVIRONTMENT VARIABLE\n
+php ceker-cc.php\n
 
